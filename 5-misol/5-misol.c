@@ -15,15 +15,15 @@ void max_count_alpha(char arr[])
                index = j;
             }           
         }
-        if (count > count_max)
+        if (count >= count_max)
         {
             count_max = count;
             max_index = index;
+            printf("Eng kop qatnashgan harf '%c', %d marta\n", arr[max_index], count_max);
         }
         count = 0;
         
     }
-    printf("Eng kop qatnashgan harf '%c', %d marta", arr[max_index], count_max);
 }
 
 int main()
